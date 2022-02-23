@@ -1,0 +1,19 @@
+KEYSIM TOOL
+===========
+
+The "KEYSIM" tool (Key Simulator tool) is keyboard based tool which can simulate keyboard events.
+
+1) It can take a set of keystroke pattern in a configuration file and can simulate those keystrokes in the system.
+
+2) If we want to do those steps repeatedly, we can set a start and stop limit.
+ 
+3) Also it provides the ability of integrating excel files with tool so that the tool can use the values in the excel sheet.
+
+4) There is no need of extra hardware or software requirements, but only latest version of java is required.
+
+As of now, the tool doesn't have capabilities of taking decisions by its own according to situations. It can only simply imitate whatever strokes we have specified to do.
+
+The tasks which are monotonous and using the same steps repeatedly whole time can be automated using the tool.
+Few examples are exporting of components, importing of components, message code creations etc.
+
+Even though the tool runs in the local machine environment, it can operate on any applications like CITRIX RECIEVER, since the tool is only simulating the actual keystrokes done by the user.

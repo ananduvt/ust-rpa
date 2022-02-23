@@ -1,0 +1,12 @@
+Some prerequisites for the tool
+===============================
+
+1) Latest Java environment is the only software requirements.
+
+2) Make sure that the looping variables are valid.
+
+3) Make sure that the operations specified in the configuration file matches the syntax. 
+
+4) If you are using the excel values, please load the excel file before starting the operations. Also make sure that the number of excel values and the iteration limit you have given matches.
+
+5) Try to find the definite and consistent order of key operations to avoid issues.

@@ -1,0 +1,18 @@
+Some prerequisites for the tool
+===============================
+
+
+The tool doesn’t have any intelligence about what you are doing or where you are doing it. It will simply do whatever you are specifying as inputs. So know well about the tool and its inputs before using it. If not the tool may can cause many issues which are not predictable. 
+
+
+1) Latest Java environment is the only software requirements.
+
+2) Make sure that the looping variables are valid.
+
+3) Make sure that the operations specified in the configuration file matches the syntax. 
+
+4) If you are using the excel values, please load the excel file before starting the operations. Also make sure that the number of excel values and the iteration limit you have given matches.
+
+5) Try to find the definite and consistent order of key operations to avoid issues.
+
+6) Before running the tool , make sure that the last focused window was the window we want to run the operation set.

@@ -1,0 +1,70 @@
+Introduction to tool UI
+=======================
+The tool mainly uses to files which are
+
+1)  Configuration file (config.xlsx) which have a set operation set specified with its corresponding operation name.
+
+2) Component file (comp.xlsx) which have a component name and set of components to be used in the program.
+
+For both the files, the data from the first sheet is only taken for the tool.
+
+Tool elements
+=============
+
+1) The OPERATION SET specify the set of operation you specified in the configuration file (config.xlsx). You have to choose the correct operation set from the operation set according to your task. While selecting the operation set please cross verify whether the keystrokes matches your desired task.
+
+2) COUNT will show the current iteration count.
+
+3) OPERATION specify the current keystroke operation being done.
+
+4) START specify the iteration starting point
+
+5) LIMIT specify the iteration ending point.
+
+6) START BUTTON will start the operation set execution according to the limit you have specified.
+
+7) STOP BUTTON will end the current operation set execution.
+
+8) EDIT helps to edit your operation set temporarily. You can edit the operation set with in the tool where it is displayed and just press edit to take the edited version of the operation set. This editing is not reflected on the original configuration file. If you want a permanent change in the operation set, edit in the configuration file.
+
+9) RELOAD BUTTON helps to reload the configuration file, in case you have done any permanent changes to the configuration file itself.
+
+10) FILE is the place where you have to specify the location of the component file.
+
+11) LOAD is used to load the specified component file. If your operation set uses the value from the component file, you should load the file before starting the operation set.
+
+How to specify the Key Strokes?
+==========================
+In every keystroke, a waiting time have to be specified. It helps the tool to wait that specified time after that operation is done. It is required since the response time for different operations are different.
+
+The basic syntax is :
+
+KeyCombination#WaitTime.
+
+Possible KeyCombinations are :
+
+1) key—Single Key
+Eg:- a,b,c, ,f1,up etc
+
+2) key&count---Key repetition
+Eg:- tab&1,down&3 etc
+
+3) key&key---Key combination
+Eg:- ctrl&a,alt&f etc
+
+4) compnt&no---Component from the excel sheet with no as column number , the row number is taken from the iteration count.
+Eg:- compnt&1, compnt&2 etc
+
+5) key&loop---Iterative increment of the key count. The key count is taken as iteration count an interactively increase the key count with each iteration.
+Eg:- down&loop, right&loop etc
+
+Some examples of key operations used in export.
+
+compnt&1#500
+enter#500
+enter#2000
+alt&f#400
+e#1000
+enter#1000
+ctrl&f#1000
+
